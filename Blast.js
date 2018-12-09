@@ -23,8 +23,6 @@ function Blast() {
  
       this.tSize = map(mouseX,0,width,16,32)
 
-
-    
     this.yL = this.yL - this.ySpeedL
     this.xL = this.xL - this.xSpeedL
     

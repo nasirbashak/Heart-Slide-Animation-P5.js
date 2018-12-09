@@ -61,9 +61,7 @@ function Drop() {
         this.displayText("Konda",10)
         //print("konda")
         break
-        
-        
-      
+
     }
     //this.displayText("Happy")
     //this.displayText("Birthday")
@@ -80,17 +78,10 @@ function Drop() {
   
   this.emoji = function(){
    textSize(this.tSize)
- 
- 
+
     //blue
    text("💙",this.x,this.y)
-
  
-    
-    
   }
-  
-  
-  
-  
+
 }

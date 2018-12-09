@@ -36,8 +36,8 @@ function draw() {
   
   for(var j = 0;j<slides.length;j++){
     
-    //slides[j].displace()
-    //slides[j].show()
+    slides[j].displace()
+    slides[j].show()
     blasts[j].crack()
     blasts[j].show()
     
@@ -49,9 +49,9 @@ function draw() {
   for (var i = 0; i < drops.length; i++) {
     drops[i].fall();
     //drops[i].show();
-    //drops[i].displayText("Birthday",7)
-    // drops[i].displayText("Happy",5)
-    //  drops[i].displayText("Konda",10)
+    drops[i].displayText("Birthday",7)
+     drops[i].displayText("Happy",5)
+      drops[i].displayText("Konda",10)
     drops[i].emoji()
     
     
