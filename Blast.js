@@ -20,9 +20,9 @@ function Blast() {
   
   this.crack = function(){
    
-     //this.start = map(mouseX,0,height,3,10)
+ 
       this.tSize = map(mouseX,0,width,16,32)
-     //   this.selectHeart = map(mouseX,0,width,16,32)
+
 
     
     this.yL = this.yL - this.ySpeedL
@@ -40,10 +40,7 @@ function Blast() {
       this.xR=width/2
       this.yR = height
     }
-    
-    
-    
-    
+
   }
  
  
