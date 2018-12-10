@@ -30,21 +30,19 @@ function setup() {
   }
 }
 
-function keyPressed(){
+function keyTyped(){
  
-  if(keyCode == 'r' || keyCode == 'R'){
+  if(key === 'r' || key === 'R'){
     recording = ! recording
-    
   }
-  
-  
+ 
 }
 
 
 function draw() {
-  background(hu++,0,0);
+  background(hu++,255,255);
   if(hu>200){
-    hu=0
+    hu=100
     
   }
   
@@ -73,14 +71,19 @@ function draw() {
   
    
   
-  //if(recording){
-  // // saveFrames("output/bday_####.png");
-  //  fill(255,0,0)
-  //}else{
-  //   fill(0,255,0)
-  //}
-  ////fill(255)
-  //ellipse(width/2,height-50,50,50)
+//  if(recording){
+//   //saveFrames("output/bday_####.png");
+//    fill(255)
+//     ellipse(width/2,height-50,50,50)
+//     //print("white")
+//  }else{
+//     fill(128)
+//      ellipse(width/2,height-50,50,50)
+//    //print("red")  
+//}
+//  //fill(255)
+ 
+
 
   //noLoop()
 }
