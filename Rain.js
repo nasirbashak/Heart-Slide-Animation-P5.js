@@ -5,9 +5,10 @@ var imgs = []
 var slides = []
 var blasts = []
 
+var recording = false;
+
+
 function preload(folder) {
-  
-  
 
   for(var i=0;i<25;i++){
     imgs[i] = loadImage('photos2/k'+(i+1));  
@@ -26,6 +27,17 @@ function setup() {
     drops[i] = new Drop();
   }
 }
+
+function keyPressed(){
+ 
+  if(keyCode == 'r' || keyCode == 'R'){
+    recording = ! recording
+    
+  }
+  
+  
+}
+
 
 function draw() {
   background(hu++,0,0);
@@ -56,5 +68,23 @@ function draw() {
     
     
   }
+  
+   saveFrames("output/bday_####.png");
+  
+  if(recording){
+    saveFrame("output/bday_####.png");
+    fill(255,0,0)
+  }else{
+     fill(0,255,0)
+  }
+  
+  ellipse(width/2,height-50,50,50)
+  
+  
+  
+  
+  
+  
+  
   //noLoop()
 }
