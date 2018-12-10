@@ -5,7 +5,7 @@ var imgs = []
 var slides = []
 var blasts = []
 
-var recording = false;
+var recording 
 
 
 function preload(folder) {
@@ -14,6 +14,7 @@ function preload(folder) {
     imgs[i] = loadImage('photos2/k'+(i+1));  
     slides[i] = new Slide(imgs[i])
     blasts[i] = new Blast()
+    
   }
 
 }
@@ -22,6 +23,7 @@ function preload(folder) {
 function setup() {
   createCanvas(1300, 650,P2D );
   hu=0
+  recording = false
   colorMode(HSB)
   for (var i = 0; i < 50; i++) {
     drops[i] = new Drop();
@@ -62,29 +64,23 @@ function draw() {
     drops[i].fall();
     //drops[i].show();
     drops[i].displayText("Birthday",7)
-     drops[i].displayText("Happy",5)
-      drops[i].displayText("Konda",10)
+    drops[i].displayText("Happy",5)
+    drops[i].displayText("Konda",10)
     drops[i].emoji()
     
     
   }
   
-   saveFrames("output/bday_####.png");
+   
   
-  if(recording){
-    saveFrame("output/bday_####.png");
-    fill(255,0,0)
-  }else{
-     fill(0,255,0)
-  }
-  
-  ellipse(width/2,height-50,50,50)
-  
-  
-  
-  
-  
-  
-  
+  //if(recording){
+  // // saveFrames("output/bday_####.png");
+  //  fill(255,0,0)
+  //}else{
+  //   fill(0,255,0)
+  //}
+  ////fill(255)
+  //ellipse(width/2,height-50,50,50)
+
   //noLoop()
 }
